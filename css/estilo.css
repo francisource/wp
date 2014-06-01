@@ -70,6 +70,11 @@ h3, .info-a, .nav li a{
     padding-top: 14px;
     text-decoration: none;
     font-weight: bold;
+    -o-transition: background 1s;
+    -ms-transition: background 1s;
+    -moz-transition: background 1s;
+    -webkit-transition: background 1s;
+    transition: background 1s;
 }
 
 .nav li a:hover{
@@ -99,4 +104,5 @@ h3, .info-a, .nav li a{
 
 .content-info a.info-a:hover {
 	border-bottom: 1px solid #A3A3A3;
+	opacity: 0.75;
 }
