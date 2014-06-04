@@ -60,7 +60,8 @@
         <div class="form-group">    
             <label for="estadoCivil">ESTADO CIVIL</label>
             <select class="form-control" name="form-estadoCivil">
-                <option value="">SELECIONE</option>
+                <option value="">SELECIONE
+                </option>
                 <option value="solteiro">Solteiro(a)</option>
                 <option value="solteiro">Casado(a)</option>
                 <option value="solteiro">Divorciado(a)</option>
@@ -80,7 +81,7 @@
 
         <div class="form-group textarea">
             <label for="mensagem">MENSAGEM</label>
-            <textarea class="campo-texto" name="mensagem"></textarea>
+            <textarea class="campo-text" name="mensagem"></textarea>
         </div>
         
         <input type="submit" name="submit" value="submit" />
