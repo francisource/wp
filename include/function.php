@@ -1,13 +1,5 @@
-<html>
-	<head>
-		<title></title>
-    <meta charset="utf-8" />
-	</head>
-	<body>
-
  <?php
 
-$name ="";
 
      $meses = array( 'janeiro'=>'Janeiro', 
                      'fevereiro'=>'Fevereiro',         
@@ -23,45 +15,17 @@ $name ="";
                      'dezembro'=>'Dezembro'); 
 
 
-    $datas = array( 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31 );
+    $datas = array( 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31);
 
-?>
-        
-  
-    
-   
-       <form action="horosco.php" method="POST"> 
-        <div>
-        <select name="m">
-            <option value="0">SELECIONE</option>
-                <?php foreach ($meses as $key => $mes): ?>
-                   <option value="<?php echo $key ?>"> <?php echo $mes ?> </option>
-                <?php endforeach; ?>
-        </select>
-    </div>
+$mm = $_POST['meses'];
+$data = $_POST['datas'];
 
 
-    <div>
-        <select name="datas">
-            <option value="0">SELECIONE</option>
-                <?php foreach ($datas as $data): ?>
-                   <option value="<?php echo $data ?>"><?php echo $data ?></option>
-                <?php endforeach; ?>
-        </select>
-    </div>
-           
-           <label> nome:</label><input type="text" name="name" />
-           <input type="submit" name="submit" value="submit" />
-           
-  </form> 
-        
-        
-<?php
     $signo ="";
 
- switch ("meses") :
+ switch ($mm) :
     case 'janeiro':
-        $signo = ("datas" > 0) && ("data" < 21) ? "Capricórno" : "Aquário";
+        $signo = ($data > 0) && ($data < 21) ? "Capricórno" : "Aquário";
         break;
     case 'fevereiro':
         $signo = ($data > 0) && ($data < 20) ? "Aquário" : "Peixes";
@@ -98,17 +62,4 @@ $name ="";
         break; 
         default;
     endswitch;
-
-
-
 ?>
-      <?php echo $signo; ?>
-        
-     <!-- <?php echo $_POST[""]; ?> -->
-
-  </body>
-
-</html>
-
-    
-    <!-- http://www.php.net/manual/pt_BR/function.filter-input.php -->
