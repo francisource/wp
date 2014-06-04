@@ -13,17 +13,13 @@
                      'outubro'=>'Outubro',
                      'novembro'=>'Novembro',
                      'dezembro'=>'Dezembro'); 
+     
+     
+     $mes = $_POST['meses'];
+     $data = $_POST['datas'];
+     $signo;
 
-
-    $datas = array( 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31);
-
-$mm = $_POST['meses'];
-$data = $_POST['datas'];
-
-
-    $signo ="";
-
- switch ($mm) :
+ switch ($mes) :
     case 'janeiro':
         $signo = ($data > 0) && ($data < 21) ? "Capricórno" : "Aquário";
         break;

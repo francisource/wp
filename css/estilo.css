@@ -15,6 +15,10 @@ h3, .info-a, .nav li a{
 	background: url("../img/bg-noise.png") repeat;
 }	
 
+.bg-content-two{
+    background: url("../img/bg-modify.png") repeat;
+}
+
 .nav{
 	position: fixed;
     top: 0;
