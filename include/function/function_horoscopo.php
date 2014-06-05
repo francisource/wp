@@ -1,6 +1,5 @@
  <?php
 
-
      $meses = array( 'janeiro'=>'Janeiro', 
                      'fevereiro'=>'Fevereiro',         
                      'marco'=>'Março',
@@ -58,4 +57,32 @@
         break; 
         default;
     endswitch;
+?>
+
+
+
+
+
+
+
+<!-- function for check -->
+
+
+<?php
+
+function check(){
+
+$age = $_POST['age'];
+$sex = $_POST['sex'];
+$name = $_POST['name'];
+
+if($age > 24 && $sex == 'female'){
+    echo $name ."aceita";
+}else{
+    echo $name ."não aceita";
+}
+
+}
+
+check();
 ?>
