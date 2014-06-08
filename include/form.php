@@ -6,7 +6,7 @@
 	<body>
 
  
-   <?php include_once 'function.php'; ?>
+   <?php include_once 'function/function_form.php'; ?>
   
     <form action="" method="POST" role="form"> 
         

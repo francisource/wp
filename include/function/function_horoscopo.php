@@ -12,11 +12,11 @@
                      'outubro'=>'Outubro',
                      'novembro'=>'Novembro',
                      'dezembro'=>'Dezembro'); 
-     
-     
+
+
      $mes = $_POST['meses'];
      $data = $_POST['datas'];
-     $signo;
+     $signo = "";
 
  switch ($mes) :
     case 'janeiro':
@@ -57,32 +57,4 @@
         break; 
         default;
     endswitch;
-?>
-
-
-
-
-
-
-
-<!-- function for check -->
-
-
-<?php
-
-function check(){
-
-$age = $_POST['age'];
-$sex = $_POST['sex'];
-$name = $_POST['name'];
-
-if($age > 24 && $sex == 'female'){
-    echo $name ."aceita";
-}else{
-    echo $name ."não aceita";
-}
-
-}
-
-check();
 ?>

@@ -110,3 +110,34 @@ h3, .info-a, .nav li a{
 	border-bottom: 1px solid #A3A3A3;
 	opacity: 0.75;
 }
+
+.erro:before {
+    content: 'Requerido';
+    position: absolute;
+    display: block;
+    height: 40px;
+    width: 98px;
+    background: #e5e5e5;
+    z-index: 1;
+    color: black;
+    padding: 10px 0 0 16px;
+}
+.erro:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #e5e5e5;
+}
+.erro label:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('../images/bt-fecha-campo.png') no-repeat;
+    height: 20px;
+    z-index: 1;
+    width: 20px;
+}
