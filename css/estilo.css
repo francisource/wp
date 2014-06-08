@@ -11,7 +11,7 @@ h3, .info-a, .nav li a{
 	font-weight: 800;
 }
 
-.home{
+.bg-content-one{
 	background: url("../img/bg-noise.png") repeat;
 }	
 
@@ -111,33 +111,164 @@ h3, .info-a, .nav li a{
 	opacity: 0.75;
 }
 
-.erro:before {
-    content: 'Requerido';
-    position: absolute;
-    display: block;
-    height: 40px;
-    width: 98px;
-    background: #e5e5e5;
-    z-index: 1;
-    color: black;
-    padding: 10px 0 0 16px;
+.window{
+    display:none;
+    width:300px;
+    height:300px;
+    position:fixed;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
 }
-.erro:after {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 0;
-    width: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid #e5e5e5;
+ 
+#mascara{
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
 }
-.erro label:before {
-    content: '';
-    display: block;
+ 
+.fechar{display:block; text-align:right;
+}
+
+.area-name{
+    width:150px;
+}
+
+.area-number{
+    width: 100px;
+}
+
+.area-min-number{
+    width: 100px;
+}
+
+.form-horoscopo select{
+    text-transform: uppercase;
+}
+
+.content article{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+article h3{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.btn {
+  background: #eb9b55;
+  background-image: -webkit-linear-gradient(top, #eb9b55, #ff5900);
+  background-image: -moz-linear-gradient(top, #eb9b55, #ff5900);
+  background-image: -ms-linear-gradient(top, #eb9b55, #ff5900);
+  background-image: -o-linear-gradient(top, #eb9b55, #ff5900);
+  background-image: linear-gradient(to bottom, #eb9b55, #ff5900);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  text-shadow: 1px 1px 3px #666666;
+  -webkit-box-shadow: 2px 2px 6px #666666;
+  -moz-box-shadow: 2px 2px 6px #666666;
+  box-shadow: 2px 2px 6px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 25px 5px 25px;
+  border: solid #e6933a 2px;
+  text-decoration: none;
+  -o-transition: background-image 1s;
+    -ms-transition: background-image 1s;
+    -moz-transition: background-image 1s;
+    -webkit-transition: background-image 2s;
+    transition: background-image 2s;
+}
+
+.btn:hover {
+  background: #d4fff9;
+  background-image: -webkit-linear-gradient(top, #d4fff9, #0088ff);
+  background-image: -moz-linear-gradient(top, #d4fff9, #0088ff);
+  background-image: -ms-linear-gradient(top, #d4fff9, #0088ff);
+  background-image: -o-linear-gradient(top, #d4fff9, #0088ff);
+  background-image: linear-gradient(to bottom, #d4fff9, #0088ff);
+  text-decoration: none;
+  border-color: #78c9e6;
+  color: #ffffff;
+}
+
+.content p{
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.form-horoscopo .btn{
+    margin-top: 15px;
+    margin-left: -30px;
+}
+
+.button-modal {
+text-align: center;
+padding-top: 10px;
+font-size: 18px;
+text-shadow: 1px 0px 1px #3d3d3d;
+color: #996d4b;
+text-decoration: none !important;
+}
+
+.text-p{
+    font-size: 16px;
+}
+
+.form-control.radio{
+    width: 25px;
+    height: 25px;
+}
+
+.form-check .p-radio{
+    margin-top: -25px;
+    margin-left: 35px;
     position: absolute;
-    background: url('../images/bt-fecha-campo.png') no-repeat;
-    height: 20px;
-    z-index: 1;
-    width: 20px;
+}
+
+.form-check .btn{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.check-space{
+    padding-top: 15px;
+}
+
+.check-space p{
+    padding: 0;
+}
+
+.area-big{
+    width: 400px;
+}
+
+.area-small{
+    width: 200px;
+}
+
+.space-group{
+    padding-right: 50px;
+}
+
+.form-form p{
+    position: absolute;
+    margin-top: -27px;
+    margin-left: 35px;
+}
+
+textarea{
+    resize: none !important;
+    width: 300px;
+    height: 150px;
+    margin: 30px -88px;
 }

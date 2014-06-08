@@ -14,8 +14,8 @@
                      'dezembro'=>'Dezembro'); 
 
 
-     $mes = $_POST['meses'];
-     $data = $_POST['datas'];
+     $mes = $_POST['meses'] ;
+     $data = $_POST['datas'] ;
      $signo = "";
 
  switch ($mes) :

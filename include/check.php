@@ -5,55 +5,36 @@
 	</head>
 	<body>
  
-  <!-- <?php include_once 'function/function_check.php'; ?> -->
-  
-    <form action="check.php" method="POST" name"check"> 
-        
-        
-        <div class="form-group">
-            <label>Nome:</label><input class="form-control" type="text" name="name" />
-        </div>
-
-       
-       
-            <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?>  value="female">Female
-   <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?>  value="male">Male
-
-        
-        <div class="form-group">
-            <label>Idade:</label><input class="form-control" type="number" name="age" /> 
-        </div>
-        
-     
-        <input type="submit" name="submit" value="submit" />
-   
-    </form> 
-        
-
-   <?php
-
-
-$age = $_POST['age'];
-$name = $_POST['name'];
-
-$gender = "";
-
- if (empty($_POST["gender"])) {
-     $genderErr = "Gender is required";
-   } else {
-     $gender = test_input($_POST["gender"]);
-   }
-   
-function test_input($data) {
-   $data = trim($data);
-   $data = stripslashes($data);
-   $data = htmlspecialchars($data);
-   return $data;
-}
-
-echo $gender;
-?>
+ 
 
   </body>
 
 </html>
+
+<p class="col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-11 col-xs-offset-1">
+
+$age = $_POST['age'];<br>
+$name = $_POST['name'];<br>
+$sex= "";<br>
+
+ if (empty($_POST["sex"])) {<br>
+     $sexErr = "Sex is required";<br>
+   } else {<br>
+     $sex = test_input($_POST["sex"]);<br>
+   }<br>
+   
+function test_input($data) {<br>
+   $data = trim($data);<br>
+   $data = stripslashes($data);<br>
+   $data = htmlspecialchars($data);<br>
+   return $data;<br>
+}<br>
+
+if(($sex == 'female') && ($age < 24)) {<br>
+  echo "O nome digitado foi, ".$name;<br>
+  echo "aceito(a)";<br>
+}else{<br>
+  echo "não aceito(a)";<br>
+}
+
+</p>
