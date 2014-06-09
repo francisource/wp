@@ -272,3 +272,25 @@ textarea{
     height: 150px;
     margin: 30px -88px;
 }
+
+.form-content strong{
+    text-transform: uppercase;
+}
+
+.upper, .check-form-form strong{
+    text-transform:uppercase;
+}
+
+footer span{
+color: #e74c3c;
+display: inline-block;
+font-size: 1.4em;
+position: relative;
+top: .2em;
+-webkit-transform: scale(.9);
+-moz-transform: scale(.9);
+transform: scale(.9);
+-webkit-animation: love .5s infinite linear alternate-reverse;
+-moz-animation: love .5s infinite linear alternate-reverse;
+animation: love .5s infinite linear alternate-reverse;
+}

@@ -106,12 +106,12 @@
         </div>
          
         <div class="form-group"> 
-        	<input class="button-form btn" type="submit" name="submit" value="Enviar" />
+        	<input class="button-form btn form1" type="submit" name="submit" value="Enviar" />
         </div> 
     </form> 
     
 
-    <p class="resposta"> Seu signo é, <strong><?php echo $signo; ?>.</strong> </p>
+    <p class="resposta"> Seu signo é, <strong class="upper"><?php echo $signo; ?>.</strong> </p>
 
     <p class="col-md-4 col-md-offset-4 text-p" >Para visualizar o código clique <a href="#janela1" class="button-modal">Aqui</a></p>
 			
@@ -129,7 +129,7 @@
 
 	</section>
 
-	<section class="content bg-content-one">
+	<section class="content bg-content-one check-form-form">
 		<article class="sub-content container ">
 			
 	    <h3 class="col-md-12">Verificação</h3>
@@ -151,7 +151,7 @@
             <label>Idade:</label><input class="form-control area-number" type="number" name="age" /> 
         </div>
         
-        <input class="btn button-form" type="submit" name="submit" value="submit" />
+        <input class="btn button-form form2" type="submit" name="submit" value="Enviar" />
    
     </form> 
 
@@ -162,6 +162,7 @@
 
 	<section class="content bg-content-two clearfix">
 		<article class="sub-content">
+            <h3 class="col-md-12">Calculadora Maluca</h3>
 			<div id="calculator">
 	<!-- Screen and clear key -->
 	<div class="top">
@@ -193,7 +194,7 @@
 		</article>
 	</section>
 
-	<section class="content bg-content-one">
+	<section class="content bg-content-one form-content">
 		<article class="sub-content container">
 
 	 <h3 class="col-md-12">Formulário</h3>
@@ -206,84 +207,88 @@
         
         <div class="form-group">
             <label for="nome">NOME</label>
-            <input class="form-control  area-big form-name" type="text" name="form_name" />
+            <input class="form-control  area-big form-name required-form3" type="text" name="form_name" />
         </div>
 
         <div class="form-group">
             <label for="endereco">ENDEREÇO</label>
-            <input class="form-control area-big" type="text" name="form_adress" />
+            <input class="form-control area-big required-form3" type="text" name="form_adress" />
         </div>
 
         <div class="form-group pull-left space-group">
             <label for="complemento">COMPLEMENTO</label>
-            <input class="form-control area-min-number" type="text" name="form_adressComplemento" />
+            <input class="form-control area-min-number required-form3" type="text" name="form_adressComplemento" />
         </div>
 
         <div class="form-grou pull-left space-group">
             <label for="bairro">BAIRRO</label>
-            <input class="form-control area-small" type="text" name="form_bairro" />
+            <input class="form-control area-small required-form3" type="text" name="form_bairro" />
         </div>
 
         <div class="form-group">
             <label for="cidade">CIDADE</label>
-            <input class="form-control area-small" type="text" name="form_city" />
+            <input class="form-control area-small required-form3" type="text" name="form_city" />
         </div>
 
         <div class="form-group pull-left space-group">       
             <label for="cep">CEP</label>
-            <input class="form-control area-small" type="number" name="form_cep" />
+            <input class="form-control area-small required-form3" type="number" name="form_cep" />
         </div>
 
         <div class="form-group">
             <label for="telefone">TELEFONE</label>
-            <input class="form-control area-small" type="number" name="form_tel" />
+            <input class="form-control area-small required-form3" type="number" name="form_tel" />
         </div>
 
         <div class="form-group"> 
             <label for="email">E-MAIL</label>
-            <input class="form-control area-big" type="text" name="form_email" />
+            <input class="form-control area-big required-form3" type="text" name="form_email" />
         </div>    
             
         <div class="form-group">
             <label for="sexo">SEXO</label>
-            <input class="form-control radio" type="radio" name="form_sexo" /><p>Masculino</p>
-            <input class="form-control radio" type="radio" name="form_sexo" /><p>Feminino</p>
+            <input class="form-control radio " type="radio" name="form_sexo" /><p>Masculino</p>
+            <input class="form-control radio " type="radio" name="form_sexo" /><p>Feminino</p>
         </div>
 
         <div class="form-group pull-left space-group">    
             <label for="estadoCivil">ESTADO CIVIL</label>
-            <select class="form-control area-name" name="form-estadoCivil">
+            <select class="form-control area-name required-form3" name="form-estadoCivil">
                 <option value="">SELECIONE
                 </option>
-                <option value="solteiro">Solteiro(a)</option>
-                <option value="solteiro">Casado(a)</option>
-                <option value="solteiro">Divorciado(a)</option>
-                <option value="solteiro">Viúvo(a)</option>
+                <option value="solteiro" >Solteiro(a)</option>
+                <option value="solteiro" >Casado(a)</option>
+                <option value="solteiro" >Divorciado(a)</option>
+                <option value="solteiro" >Viúvo(a)</option>
             </select>
         </div>
 
         <div class="form-group pull-left space-group">
             <label for="cpf">CPF</label>
-            <input class="form-control area-small" type="text" name="form_cpf" />
+            <input class="form-control area-small required-form3" type="text" name="form_cpf" />
         </div>
 
         <div class="form-group">
             <label for="rg">RG</label>
-            <input class="form-control area-small" type="text" name="form_rg" />
+            <input class="form-control area-small required-form3" type="text" name="form_rg" />
         </div>
 
         <div class="form-group textarea">
             <label for="mensagem">MENSAGEM</label>
-            <textarea class="campo-text" name="mensagem"></textarea>
+            <textarea class="campo-text maxlength required-form3" name="mensagem" maxlength="350"></textarea>
         </div>
         
         <div class="form-group"> 
-        	<input class="button-form btn" type="submit" name="submit" value="Enviar" />
+        	<input class="button-form btn form3" type="submit" name="submit" value="Enviar" />
         </div> 
    
     </form> 
 
-    <?php include_once 'function/function_form.php'; ?>
+
+    <?php $form_name = $_POST['form_name']; ?>
+
+    <?php echo "<p> <strong>".$form_name."</strong> EM BREVE ENTRAREMOS EM CONTATO. OBRIGADO(A) PELA COLABORAÇÃO. </p>" ?>
+
 			
 
 			<a href="#"></a>
@@ -292,7 +297,7 @@
 
 	<section class="content">
 		<footer>
-			<p></p>
+			<p>Feito com muito <span>♥</span> por Francis Cruz & Áquila Mota.</p>
 		</footer>
 	</section>
 </body>

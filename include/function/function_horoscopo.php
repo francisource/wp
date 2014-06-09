@@ -7,7 +7,7 @@
                      'maio'=>'Maio',
                      'junho'=>'Junho',
                      'julho'=>'Julho',
-                     'agora'=>'Agosto',
+                     'agosto'=>'Agosto',
                      'setembro'=>'Setembro',
                      'outubro'=>'Outubro',
                      'novembro'=>'Novembro',
