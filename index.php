@@ -1,4 +1,4 @@
-﻿<!-- Faculdade Unirb-Salvador
+<!-- Faculdade Unirb-Salvador
 	 4ª Semestre de analise e desenvolvimento de sistemas 2014.1
 	 início: 31-05-2014
 	 autor: Áquila Mota e Francis Cruz
@@ -90,10 +90,10 @@
 
         <p class="col-md-12"> Preencha os campos abaixo, com o dia e o mês de seu nascimento para saber qual é o seu signo. </p>
 
-		<form action="" method="POST" role="form" class="form form-horoscopo  col-md-12"> 
+		<form action="" method="POST" id="horo-form" role="form" class="form form-horoscopo  col-md-12"> 
         
         <div class="form-group pull-left col-md-offset-3 col-md-2">
-            <label>Data</label><input class="form-control area-min-number required" type="number" name="datas" max="31" step="0.01" />
+            <label>Dia</label><input class="form-control area-min-number required" type="number" name="datas" max="31" step="0.01" value=" "/>
         </div>
         
         <div class="form-group col-md-3"><label>Mês</label>
@@ -285,7 +285,7 @@
     </form> 
 
 
-    <?php $form_name = $_POST['form_name']; ?>
+    <?php $form_name = isset($_POST['form_name']) ? $_POST['form_name'] : ''; ?>
 
     <?php echo "<p> <strong>".$form_name."</strong> EM BREVE ENTRAREMOS EM CONTATO. OBRIGADO(A) PELA COLABORAÇÃO. </p>" ?>
 

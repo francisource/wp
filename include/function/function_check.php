@@ -1,8 +1,8 @@
  <?php
 
-$age = $_POST['age'];
-$name = $_POST['name'];
 $sex= "";
+$age= isset($_POST['age']) ? $_POST['age'] : '';
+$name= isset($_POST['name']) ? $_POST['name'] : '';
 
  if (empty($_POST["sex"])) {
      $sexErr = "Sex is required";

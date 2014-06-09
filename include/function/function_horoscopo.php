@@ -1,5 +1,6 @@
  <?php
 
+
      $meses = array( 'janeiro'=>'Janeiro', 
                      'fevereiro'=>'Fevereiro',         
                      'marco'=>'Março',
@@ -14,9 +15,13 @@
                      'dezembro'=>'Dezembro'); 
 
 
-     $mes = $_POST['meses'] ;
-     $data = $_POST['datas'] ;
-     $signo = "";
+     
+
+$signo = "";
+
+$mes= isset($_POST['meses']) ? $_POST['meses'] : '';
+$data= isset($_POST['datas']) ? $_POST['datas'] : '';
+
 
  switch ($mes) :
     case 'janeiro':
@@ -58,3 +63,4 @@
         default;
     endswitch;
 ?>
+
