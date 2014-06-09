@@ -297,7 +297,7 @@
 
 	<section class="content">
 		<footer>
-			<p>Feito com muito <span>♥</span> por Francis Cruz & Áquila Mota.</p>
+			<p>Feito com muito <span>♥</span> e carinho, por Francis Cruz & Áquila Mota.</p>
 		</footer>
 	</section>
 </body>

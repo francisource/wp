@@ -294,3 +294,7 @@ transform: scale(.9);
 -moz-animation: love .5s infinite linear alternate-reverse;
 animation: love .5s infinite linear alternate-reverse;
 }
+
+footer p{
+    padding-top: 15px;
+}
