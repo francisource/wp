@@ -285,10 +285,12 @@
     </form> 
 
 
-    <?php $form_name = isset($_POST['form_name']) ? $_POST['form_name'] : ''; ?>
+    <?php $form_name = isset($_POST['form_name']) ? $_POST['form_name'] : ''; 
 
-    <?php echo "<p> <strong>".$form_name."</strong> EM BREVE ENTRAREMOS EM CONTATO. OBRIGADO(A) PELA COLABORAÇÃO. </p>" ?>
+  
 
+     echo "<p> <strong>".$form_name."</strong> EM BREVE ENTRAREMOS EM CONTATO. OBRIGADO(A) PELA COLABORAÇÃO. </p>" ?>
+      
 			
 
 			<a href="#"></a>
