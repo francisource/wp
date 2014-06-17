@@ -43,7 +43,7 @@
 			    	<a href="#">Atividade 1</a>
 			    </li>
 			    <li>
-			    	<a href="#">Atividade 2</a>
+			    	<a href="#">Exercidade 2</a>
 			    </li>
 			    <li>
 			    	<a href="#">Atividade 3</a>
